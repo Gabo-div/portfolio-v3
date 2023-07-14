@@ -364,7 +364,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="mt-96 bg-bunker-950/50 border-t-bunker-500/20 border-t">
+      <footer className="bg-bunker-950/50 mt-96 border-t-bunker-500/20 border-t">
         <div className="container mx-auto flex flex-wrap justify-between items-center p-8">
           <p className="w-full lg:w-fit text-sm text-center lg:text-left">
             © 2023 Todos los derechos reservados
