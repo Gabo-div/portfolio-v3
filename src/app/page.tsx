@@ -51,7 +51,7 @@ const smallItems: SmallProject[] = [
     description:
       "Mi portafolio de programador web. Una plataforma que presenta mis habilidades y experiencia en desarrollo web. Incluye proyectos realizados Y tecnologías utilizadas.",
     tags: ["React", "Nextjs", "Tailwind"],
-    github: "Mi portafolio personal",
+    github: "https://github.com/Gabo-div/portfolio-v3",
   },
 ];
 
