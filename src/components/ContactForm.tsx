@@ -35,12 +35,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      className="w-full flex flex-col space-y-4"
-      autoComplete="off"
-      noValidate
-    >
+    <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col space-y-4" autoComplete="off" noValidate>
       <div className="flex flex-col">
         <label htmlFor="contact-name" className="mb-4">
           Nombre
@@ -54,11 +49,7 @@ export default function ContactForm() {
           }
           {...register("name")}
         />
-        {errors.name ? (
-          <p className="e mt-2 text-red-400 text-sm">
-            Asegurese de que este campo es válido
-          </p>
-        ) : null}
+        {errors.name ? <p className="e mt-2 text-red-400 text-sm">Asegurese de que este campo es válido</p> : null}
       </div>
       <div className="flex flex-col">
         <label htmlFor="contact-email" className="mb-4">
@@ -74,11 +65,7 @@ export default function ContactForm() {
           }
           {...register("email")}
         />
-        {errors.email ? (
-          <p className="e mt-2 text-red-400 text-sm">
-            Asegurese de que este campo es válido
-          </p>
-        ) : null}
+        {errors.email ? <p className="e mt-2 text-red-400 text-sm">Asegurese de que este campo es válido</p> : null}
       </div>
       <div className="flex flex-col">
         <label htmlFor="contact-message" className="mb-4">
@@ -93,20 +80,14 @@ export default function ContactForm() {
           }
           {...register("message")}
         />
-        {errors.message ? (
-          <p className="e mt-2 text-red-400 text-sm">
-            Asegurese de que este campo es válido
-          </p>
-        ) : null}
+        {errors.message ? <p className="e mt-2 text-red-400 text-sm">Asegurese de que este campo es válido</p> : null}
       </div>
       <input
         value="Enviar"
         type="submit"
-        className="bg-red-300 p-2 rounded-lg font-bold text-bunker-950 hover:bg-red-400/80"
+        className="bg-red-300 p-2 cursor-pointer rounded-lg font-bold text-bunker-950 hover:bg-red-400/80"
       />
-      {sent ? (
-        <p className="text-green-400">Mensaje enviado con éxito</p>
-      ) : null}
+      {sent ? <p className="text-green-400">Mensaje enviado con éxito</p> : null}
     </form>
   );
 }

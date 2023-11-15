@@ -1,18 +1,7 @@
-import {
-  AiFillGithub,
-  AiFillHtml5,
-  AiFillTwitterCircle,
-  AiOutlineInstagram,
-  AiOutlineMessage,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillHtml5, AiFillTwitterCircle, AiOutlineInstagram, AiOutlineMessage } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaCss3Alt } from "react-icons/fa";
-import {
-  BiLogoJavascript,
-  BiLogoReact,
-  BiLogoSass,
-  BiLogoTypescript,
-} from "react-icons/bi";
+import { BiLogoJavascript, BiLogoReact, BiLogoSass, BiLogoTypescript } from "react-icons/bi";
 import { SiNextdotjs } from "react-icons/si";
 import PortfolioItem from "@/components/PortfolioItem";
 import PortfolioSmallItem from "@/components/PortfolioSmallItem";
@@ -82,6 +71,14 @@ export default function Home() {
                   Contacto
                 </a>
               </li>
+              <li>
+                <a
+                  href="/resume.pdf"
+                  className="font-bold text-red-300/80 border-2 border-red-300/80 px-4 py-2  hover:bg-red-300/10 rounded-md"
+                >
+                  CV
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -91,13 +88,11 @@ export default function Home() {
               Gabriel H<span className="text-red-300/80">.</span> Vallés
             </h1>
             <h2 className="text-bunker-200 mt-2 text-xl md:text-2xl lg:text-4xl font-medium">
-              Programador Web Full-Stack{" "}
-              <span className="mx-auto text-red-300/80">{"</>"}</span>
+              Programador Web Full-Stack <span className="mx-auto text-red-300/80">{"</>"}</span>
             </h2>
             <p className="mt-4">
-              Desarrollador web full stack con experiencia en diseño y
-              desarrollo de aplicaciones web utilizando tecnologías front-end y
-              back-end. Experto en crear soluciones interactivas y funcionales.
+              Desarrollador web full stack con experiencia en diseño y desarrollo de aplicaciones web utilizando
+              tecnologías front-end y back-end. Experto en crear soluciones interactivas y funcionales.
             </p>
           </div>
 
@@ -128,40 +123,29 @@ export default function Home() {
               <h3 className="text-bunker-200 font-medium text-2xl">SOBRE MI</h3>
               <div className="mt-8 space-y-6">
                 <p>
-                  Como desarrollador web full-stack, mi historial demuestra el
-                  desarrollo de aplicaciones web de alta calidad que satisfacen
-                  las necesidades de los clientes. Poseo competencia en diversas
-                  tecnologías, como HTML, CSS, JavaScript, TypeScript, React y
-                  Next.js, y experiencia en front-end y back-end.
+                  Como desarrollador web full-stack, mi historial demuestra el desarrollo de aplicaciones web de alta
+                  calidad que satisfacen las necesidades de los clientes. Poseo competencia en diversas tecnologías,
+                  como HTML, CSS, JavaScript, TypeScript, React y Next.js, y experiencia en front-end y back-end.
                 </p>
                 <p>
                   En{" "}
-                  <a
-                    href="#projects"
-                    className="text-red-300/80 decoration-red-300 decoration-wavy hover:underline "
-                  >
+                  <a href="#projects" className="text-red-300/80 decoration-red-300 decoration-wavy hover:underline ">
                     proyectos anteriores
                   </a>
-                  , se ha evidenciado mi habilidad para crear interfaces de
-                  usuario intuitivas y diseños atractivos que mejoran la
-                  experiencia del usuario. También he construido arquitecturas
-                  de back-end sólidas utilizando Node.js, Express y GraphQL,
-                  garantizando la seguridad y escalabilidad de las aplicaciones.
+                  , se ha evidenciado mi habilidad para crear interfaces de usuario intuitivas y diseños atractivos que
+                  mejoran la experiencia del usuario. También he construido arquitecturas de back-end sólidas utilizando
+                  Node.js, Express y GraphQL, garantizando la seguridad y escalabilidad de las aplicaciones.
                 </p>
                 <p>
-                  Soy un profesional altamente motivado y orientado a los
-                  detalles, comprometido con estar al tanto de las últimas
-                  tendencias y mejores prácticas de la industria. Busco
-                  constantemente nuevos desafíos y oportunidades para expandir
-                  mis habilidades. Confío en que mi experiencia y conocimientos
-                  me convierten en un activo valioso para cualquier equipo.
+                  Soy un profesional altamente motivado y orientado a los detalles, comprometido con estar al tanto de
+                  las últimas tendencias y mejores prácticas de la industria. Busco constantemente nuevos desafíos y
+                  oportunidades para expandir mis habilidades. Confío en que mi experiencia y conocimientos me
+                  convierten en un activo valioso para cualquier equipo.
                 </p>
               </div>
             </div>
             <div className="w-full lg:w-1/2 lg:px-3">
-              <h3 className="text-bunker-200 font-medium text-2xl mt-8 lg:mt-0 lg:text-right">
-                HABILIDADES
-              </h3>
+              <h3 className="text-bunker-200 font-medium text-2xl mt-8 lg:mt-0 lg:text-right">HABILIDADES</h3>
               <div className="mt-8 grid grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6 group/list">
                 <div className="text-red-300/80 p-2 bg-bunker-800/10 rounded-lg flex flex-col items-center justify-center">
                   <AiFillHtml5 className="text-5xl" />
@@ -177,15 +161,11 @@ export default function Home() {
                 </div>
                 <div className="text-red-300/80 p-2 bg-bunker-800/10 rounded-lg flex flex-col items-center justify-center">
                   <BiLogoJavascript className="text-5xl" />
-                  <h5 className="text-sm lg:text-md font-medium mt-2">
-                    JavaScript
-                  </h5>
+                  <h5 className="text-sm lg:text-md font-medium mt-2">JavaScript</h5>
                 </div>
                 <div className="text-red-300/80 p-2 bg-bunker-800/10 rounded-lg flex flex-col items-center justify-center">
                   <BiLogoTypescript className="text-5xl" />
-                  <h5 className="text-sm lg:text-md font-medium mt-2">
-                    TypeScript
-                  </h5>
+                  <h5 className="text-sm lg:text-md font-medium mt-2">TypeScript</h5>
                 </div>
                 <div className="text-red-300/80  p-2 bg-bunker-800/10 rounded-lg flex flex-col items-center justify-center">
                   <BiLogoReact className="text-5xl" />
@@ -193,9 +173,7 @@ export default function Home() {
                 </div>
                 <div className="text-red-300/80 p-2 bg-bunker-800/10 rounded-lg flex flex-col items-center justify-center">
                   <SiNextdotjs className="text-5xl" />
-                  <h5 className="text-sm lg:text-md font-medium mt-2">
-                    NextJs
-                  </h5>
+                  <h5 className="text-sm lg:text-md font-medium mt-2">NextJs</h5>
                 </div>
               </div>
             </div>
@@ -203,9 +181,7 @@ export default function Home() {
         </div>
 
         <div id="projects" className="container mx-auto mt-96 px-4">
-          <h3 className="text-5xl font-bold text-red-300">
-            Proyectos Destacables
-          </h3>
+          <h3 className="text-5xl font-bold text-red-300">Proyectos Destacables</h3>
           <div className="flex flex-col space-y-12 mt-20">
             {items.map((item) => (
               <PortfolioItem {...item} key={item.title} />
@@ -239,9 +215,7 @@ export default function Home() {
 
       <footer className="bg-bunker-950/50 mt-96 border-t-bunker-500/20 border-t">
         <div className="container mx-auto flex flex-wrap justify-between items-center p-8">
-          <p className="w-full lg:w-fit text-sm text-center lg:text-left">
-            © 2023 Todos los derechos reservados
-          </p>
+          <p className="w-full lg:w-fit text-sm text-center lg:text-left">© 2023 Todos los derechos reservados</p>
 
           <div className="w-full lg:w-fit justify-center mt-8 lg:mt-0 flex space-x-6 group/list">
             <a
