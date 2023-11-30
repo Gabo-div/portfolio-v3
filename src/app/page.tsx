@@ -237,6 +237,15 @@ export default function Home() {
             </a>
 
             <a
+              href="https://www.linkedin.com/in/gabriel-h-valles/"
+              rel="noreferrer"
+              target="_blank"
+              className="group group-hover/list:opacity-50 hover:!opacity-100 transition-all"
+            >
+              <AiFillLinkedin className="group-hover:text-red-300/80 text-2xl transition-all" />
+            </a>
+
+            <a
               href="mailto:hernandezvallesgabriel@gmail.com"
               className="group group-hover/list:opacity-50 hover:!opacity-100 transition-all"
             >
