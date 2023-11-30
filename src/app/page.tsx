@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillHtml5, AiFillTwitterCircle, AiOutlineInstagram, AiOutlineMessage } from "react-icons/ai";
+import { AiFillGithub, AiFillHtml5, AiOutlineMessage, AiFillLinkedin } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaCss3Alt } from "react-icons/fa";
 import { BiLogoJavascript, BiLogoReact, BiLogoSass, BiLogoTypescript } from "react-icons/bi";
@@ -104,6 +104,15 @@ export default function Home() {
               className="group group-hover/list:opacity-50 hover:!opacity-100 transition-all"
             >
               <AiFillGithub className="group-hover:text-red-300/80 text-3xl transition-all" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/gabriel-h-valles/"
+              rel="noreferrer"
+              target="_blank"
+              className="group group-hover/list:opacity-50 hover:!opacity-100 transition-all"
+            >
+              <AiFillLinkedin className="group-hover:text-red-300/80 text-3xl transition-all" />
             </a>
 
             <a
