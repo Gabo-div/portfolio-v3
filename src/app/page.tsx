@@ -7,6 +7,8 @@ import PortfolioItem from "@/components/PortfolioItem";
 import PortfolioSmallItem from "@/components/PortfolioSmallItem";
 import ContactForm from "@/components/ContactForm";
 import { Project, SmallProject } from "../../types/Project";
+import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 const items: Project[] = [
   {
@@ -48,40 +50,8 @@ export default function Home() {
   return (
     <>
       <header id="home" className="h-screen flex items-center relative">
-        <div className="w-full absolute h-fit inset-0 z-30">
-          <div className="container mx-auto px-2 py-6 flex justify-between items-center">
-            <ul className="mx-auto font-medium flex space-x-4 text-sm lg:mx-0 lg:ml-auto">
-              <li>
-                <a href="#home" className="hover:text-red-300/80">
-                  Inicio
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="hover:text-red-300/80">
-                  Sobre mi
-                </a>
-              </li>
-              <li>
-                <a href="#projects" className="hover:text-red-300/80">
-                  Proyectos
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:text-red-300/80">
-                  Contacto
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/resume.pdf"
-                  className="font-bold text-red-300/80 border-2 border-red-300/80 px-4 py-2  hover:bg-red-300/10 rounded-md"
-                >
-                  CV
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <Navbar />
+
         <div className="px-6 container mx-auto flex flex-col lg:flex-row flex-wrap justify-center items-center absolute inset-0">
           <div className="text-center lg:text-left w-full lg:max-w-3xl">
             <h1 className="text-6xl lg:text-8xl font-bold text-bunker-100">
@@ -103,7 +73,7 @@ export default function Home() {
               target="_blank"
               className="group group-hover/list:opacity-50 hover:!opacity-100 transition-all"
             >
-              <AiFillGithub className="group-hover:text-red-300/80 text-3xl transition-all" />
+              <AiFillGithub className="group-hover:text-red-300/80 text-4xl transition-all" />
             </a>
 
             <a
@@ -112,14 +82,14 @@ export default function Home() {
               target="_blank"
               className="group group-hover/list:opacity-50 hover:!opacity-100 transition-all"
             >
-              <AiFillLinkedin className="group-hover:text-red-300/80 text-3xl transition-all" />
+              <AiFillLinkedin className="group-hover:text-red-300/80 text-4xl transition-all" />
             </a>
 
             <a
               href="mailto:hernandezvallesgabriel@gmail.com"
               className="group group-hover/list:opacity-50 hover:!opacity-100 transition-all"
             >
-              <HiOutlineMail className="group-hover:text-red-300/80 text-3xl transition-all" />
+              <HiOutlineMail className="group-hover:text-red-300/80 text-4xl transition-all" />
             </a>
           </div>
         </div>
@@ -128,7 +98,7 @@ export default function Home() {
       <main>
         <div id="about" className="container mx-auto mt-60 px-4">
           <div className="bg-bunker-950/50 px-6 lg:px-10 py-16 rounded-md ring-1 ring-bunker-500/20 flex flex-wrap">
-            <div className="w-full lg:w-1/2 lg:px-3">
+            <div className="w-full lg:w-1/2 lg:pl-4 lg:pr-12">
               <h3 className="text-bunker-200 font-medium text-2xl">SOBRE MI</h3>
               <div className="mt-8 space-y-6">
                 <p>
@@ -153,9 +123,9 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 lg:px-3">
-              <h3 className="text-bunker-200 font-medium text-2xl mt-8 lg:mt-0 lg:text-right">HABILIDADES</h3>
-              <div className="mt-8 grid grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6 group/list">
+            <div className="w-full lg:w-1/2 lg:pr-4 lg:pl-12">
+              <h3 className="text-bunker-200 font-medium text-2xl mt-8 lg:mt-0">HABILIDADES</h3>
+              <div className="mt-8 grid grid-cols-3 lg:grid-cols-3 gap-2 lg:gap-6 group/list">
                 <div className="text-red-300/80 p-2 bg-bunker-800/10 rounded-lg flex flex-col items-center justify-center">
                   <AiFillHtml5 className="text-5xl" />
                   <h5 className="text-sm lg:text-md font-medium mt-2">HTML</h5>

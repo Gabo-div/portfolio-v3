@@ -5,13 +5,7 @@ import { Project } from "../../types/Project";
 
 type Props = Project;
 
-export default function PortfolioSmallItem({
-  title,
-  description,
-  tags,
-  imageURL,
-  github,
-}: Props) {
+export default function PortfolioSmallItem({ title, description, tags, imageURL, github }: Props) {
   const id = useId();
 
   return (
@@ -23,11 +17,11 @@ export default function PortfolioSmallItem({
     >
       <div className="w-full lg:w-1/2 grow flex flex-col justify-between p-2">
         <div>
-          <h5 className="text-bunker-200 font-medium text-lg group-hover/item:text-red-300 transition-all flex items-center">
+          <h5 className="text-bunker-200 font-medium text-2xl group-hover/item:text-red-300 transition-all flex items-center">
             <span>{title}</span>
             <BiLinkExternal className="transition-transform ml-2 group-hover/item:translate-x-2 group-hover/item:-translate-y-2" />
           </h5>
-          <p className="mt-2">{description}</p>
+          <p className="mt-2 max-w-lg">{description}</p>
         </div>
         <ul className="flex flex-wrap">
           {tags.map((tag) => (
@@ -40,13 +34,7 @@ export default function PortfolioSmallItem({
         </ul>
       </div>
       <div className="w-full mt-8 lg:mt-0 lg:w-1/2 p-2">
-        <Image
-          src={imageURL}
-          alt="clon de discord"
-          width="1920"
-          height="1080"
-          className="rounded-lg aspect-video"
-        />
+        <Image src={imageURL} alt="clon de discord" width="1920" height="1080" className="rounded-lg aspect-video" />
       </div>
     </a>
   );

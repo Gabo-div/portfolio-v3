@@ -42,6 +42,7 @@ export default function ContactForm() {
         </label>
         <input
           id="contact-name"
+          placeholder="Jhon Doe"
           className={
             errors.name
               ? "bg-bunker-900/50 p-2 h-10 rounded-lg focus:outline-red-400 border border-red-400 text-red-400"
@@ -58,6 +59,7 @@ export default function ContactForm() {
         <input
           type="email"
           id="contact-email"
+          placeholder="example@example.com"
           className={
             errors.email
               ? "bg-bunker-900/50 p-2 h-10 rounded-lg focus:outline-red-400 border border-red-400 text-red-400"
@@ -73,6 +75,7 @@ export default function ContactForm() {
         </label>
         <textarea
           id="contact-message"
+          placeholder="Escriba su mensaje"
           className={
             errors.message
               ? "bg-bunker-900/50 p-2 h-40 resize-none rounded-lg focus:outline-red-400 border border-red-400 text-red-400"
