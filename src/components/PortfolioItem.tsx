@@ -5,7 +5,7 @@ import { Project } from "../../types/Project";
 
 type Props = Project;
 
-export default function PortfolioSmallItem({ title, description, tags, imageURL, github }: Props) {
+export default function PortfolioItem({ title, description, tags, imageURL, github }: Props) {
   const id = useId();
 
   return (
