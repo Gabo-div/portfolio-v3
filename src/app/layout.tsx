@@ -5,34 +5,31 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const title = "Gabriel Vallés - Desarrollador y Programador Web";
+const description =
+  "Gabriel Hernández Vallés es un programador y desarrollador web que crea aplicaciones y experiencias digitales para la web.";
+
 export const metadata: Metadata = {
-  title: "Gabriel H. Vallés",
-  description:
-    "Gabriel Valles es un programador web que crea aplicaciones y experiencias digitales para la web.",
+  title,
+  description,
   openGraph: {
     locale: "es",
     images: "/og.png",
-    siteName: "Gabriel H. Vallés",
+    siteName: title,
     type: "website",
-    title: "Gabriel H. Vallés",
-    description:
-      "Gabriel Valles es un programador web que crea aplicaciones y experiencias digitales para la web.",
+    title,
+    description,
     url: "/",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gabriel H. Vallés",
-    description:
-      "Gabriel Valles es un programador web que crea aplicaciones y experiencias digitales para la web.",
+    title,
+    description,
     images: "/og.png",
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
