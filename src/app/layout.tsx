@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -9,10 +9,20 @@ const title = "Gabriel Vallés - Desarrollador y Programador Web";
 const description =
   "Gabriel Hernández Vallés es un programador y desarrollador web que crea aplicaciones y experiencias digitales para la web.";
 
+
+export const viewport: Viewport = {
+  themeColor: "#0e1015",
+  colorScheme: "dark",
+}
+
 export const metadata: Metadata = {
   title,
   description,
-  canonical: "https://www.gabrielvalles.dev",
+  keywords: ["Programador", "Desarrollador", "Gabriel Vallés", "Web", "Full-Stack", "FullStack"],
+  metadataBase: new URL("https://www.gabrielvalles.dev"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     locale: "es",
     images: "/og.png",
