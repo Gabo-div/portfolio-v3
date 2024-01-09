@@ -12,6 +12,7 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
+  canonical: "https://www.gabrielvalles.dev",
   openGraph: {
     locale: "es",
     images: "/og.png",

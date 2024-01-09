@@ -1,34 +1,26 @@
 export default function Navbar() {
   return (
-    <div className="w-full absolute h-fit border-b border-b-transparent inset-0 z-30 px-2 py-6">
-      <div className="container mx-auto flex justify-between items-center">
-        <ul className="mx-auto font-medium flex space-x-4 text-sm lg:mx-0 lg:ml-auto">
-          <li>
-            <a href="#home" className="hover:text-red-300/80">
+    <div className="fixed h-fit inset-0 z-30 px-4 mt-4">
+      <div className="container max-w-lg mx-auto">
+        <ul className="w-full h-10 bg-bunker-950 ring-1 ring-bunker-500/50 rounded-full text-bunker-200 font-medium flex text-sm">
+          <li className="grow">
+            <a href="#home" className="pl-2 w-full h-full flex items-center justify-center hover:text-red-300/80">
               Inicio
             </a>
           </li>
-          <li>
-            <a href="#about" className="hover:text-red-300/80">
+          <li className="grow">
+            <a href="#about" className="w-full h-full flex items-center justify-center hover:text-red-300/80">
               Sobre mi
             </a>
           </li>
-          <li>
-            <a href="#projects" className="hover:text-red-300/80">
+          <li className="grow">
+            <a href="#projects" className="w-full h-full flex items-center justify-center hover:text-red-300/80">
               Proyectos
             </a>
           </li>
-          <li>
-            <a href="#contact" className="hover:text-red-300/80">
+          <li className="grow">
+            <a href="#contact" className="pr-2 w-full h-full flex items-center justify-center hover:text-red-300/80">
               Contacto
-            </a>
-          </li>
-          <li>
-            <a
-              href="/resume.pdf"
-              className="font-bold text-red-300/80 border-2 border-red-300/80 px-4 py-2  hover:bg-red-300/10 rounded-md"
-            >
-              CV
             </a>
           </li>
         </ul>

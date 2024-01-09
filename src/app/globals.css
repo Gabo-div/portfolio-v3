@@ -14,3 +14,8 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   @apply bg-red-300 rounded-sm;
 }
+
+.full-screen {
+  min-height: 100vh;
+  min-height: 100svh;
+}
